@@ -15,9 +15,9 @@ body {
   height: 100%;
 }
 
-nav {
-  vertical-align: middle;
-  padding: 0.25rem;
+nav,
+footer {
+  padding-left: 2rem;
   height: 7rem;
   width: 100%;
   display: -webkit-box;
@@ -26,17 +26,18 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #172830;
 }
 
-nav #logo {
+#logo {
   height: 100%;
 }
 
-nav #icon {
+#icon {
   height: 30%;
 }
 
-nav .menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,10 +97,29 @@ header .hero-text #explore {
   border-radius: 32px;
 }
 
-header a {
+a {
   text-decoration: none;
   color: white;
   font-family: "SFUI", sans-serif;
+}
+
+.tea-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.tea-title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 main {
@@ -128,39 +148,9 @@ main .summer-home div {
   left: 10%;
 }
 
-main .tea-sections {
-  margin: 0 5rem;
-  font-family: "Old Standard TT", serif;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-main .tea-items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-main .tea-items p {
+main p {
   font-family: "SFUI", sans-serif;
   font-size: 1rem;
   font-weight: bold;
-}
-
-main .tea-names {
-  width: 90%;
-  font-family: "SFUI", sans-serif;
-  font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: left;
 }
 /*# sourceMappingURL=styles.css.map */
